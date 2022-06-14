@@ -1,0 +1,57 @@
+﻿<Window x:Class="adb_auto.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:adb_auto"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <StackPanel>
+        <Button FontSize="16" Click="Button_Click_2" Content="Connect devices" Height="43" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Grid>
+            <ComboBox x:Name="cbItemSource" Height="38" HorizontalContentAlignment="Center" FontSize="16" VerticalContentAlignment="Center" VerticalAlignment="Center" SelectionChanged="comboBox1_SelectionChanged"></ComboBox>
+            <TextBlock HorizontalAlignment="Center" VerticalAlignment="Center" FontSize="16" IsHitTestVisible="False"  Name="txtSelectTeam" Foreground="Black" Text="-- Select stage to start --"></TextBlock>
+        </Grid>
+
+        <Button FontSize="16" Click="Button_Click" Content="Start" Height="43" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="150"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>
+        <Button FontSize="16" Click="Button_Click_1"  Content="Stop" Height="43" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="150"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+            </Button>
+            <!--<Button Click="Button_Click_3"  Content="Auto to stage 2.3" Height="43" RenderTransformOrigin="0.5,0.5">
+            <Button.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform/>
+                    <TranslateTransform Y="150"/>
+                </TransformGroup>
+            </Button.RenderTransform>
+        </Button>-->
+
+    </StackPanel>
+</Window>
